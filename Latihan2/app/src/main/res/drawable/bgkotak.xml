@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#7E7C7C"/> <!-- Warna background -->
+    <corners android:bottomLeftRadius="40dp" android:bottomRightRadius="40dp"/> <!-- Hanya bagian bawah membulat -->
+    <stroke android:width="12dp" android:color="#2F2F2F"/> <!-- Garis tepi -->
+</shape>

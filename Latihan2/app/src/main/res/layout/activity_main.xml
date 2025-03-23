@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleX="2.1"
+        android:scaleY="2.5"
+        android:src="@drawable/backgourngv"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+    </ImageView>
+
+    <FrameLayout
+        android:id="@+id/profil"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@drawable/bgkotak"
+        android:layout_marginBottom="610dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher_foreground"
+            android:layout_margin="20dp">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Halo User"
+            android:textColor="#070707"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingTop="30sp"
+            android:paddingLeft="90sp"
+            android:layout_margin="20sp"
+            android:layout_gravity="center_horizontal|left">
+
+        </TextView>
+
+    </FrameLayout>
+
+    <ImageButton
+        android:id="@+id/button1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/baseline_account_circle_24"
+        android:background="@drawable/tombolbg"
+        app:layout_constraintBottom_toTopOf="@+id/bawah"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profil">
+
+    </ImageButton>
+
+    <ImageButton
+        android:id="@+id/button2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/tombolbg"
+        android:src="@drawable/baseline_cruelty_free_24"
+        app:layout_constraintBottom_toTopOf="@+id/bawah"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button1"
+        app:layout_constraintTop_toBottomOf="@+id/profil">
+
+    </ImageButton>
+
+    <ImageButton
+        android:id="@+id/button3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/tombolbg"
+        app:layout_constraintBottom_toTopOf="@+id/bawah"
+        android:src="@drawable/baseline_dataset_linked_24"
+        app:layout_constraintEnd_toStartOf="@+id/button1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profil">
+
+    </ImageButton>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="#424040"
+        android:textStyle="bold"
+        android:text="Personal"
+        android:layout_marginBottom="150dp"
+        app:layout_constraintBottom_toTopOf="@+id/bawah"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button1">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#424040"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="150dp"
+        android:layout_marginRight="20dp"
+        android:text="Social Media"
+        app:layout_constraintBottom_toTopOf="@+id/bawah"
+        app:layout_constraintEnd_toStartOf="@+id/textView1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Detail Saya"
+        android:layout_marginBottom="150dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="#424040"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/bawah"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView1"
+        app:layout_constraintTop_toBottomOf="@+id/button3">
+
+    </TextView>
+
+    <FrameLayout
+        android:id="@+id/bawah"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@drawable/bgkotak2"
+        android:layout_marginTop="495dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profil">
+
+        <TextView
+            android:id="@+id/txtName1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_margin="20dp"
+            android:text="LATIHAN 2 Mendesain"
+            android:textColor="#070707"
+            android:textSize="18sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+    </FrameLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
